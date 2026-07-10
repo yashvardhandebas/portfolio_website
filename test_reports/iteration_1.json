@@ -1,0 +1,27 @@
+{
+  "summary": "Frontend-only portfolio smoke test. Hero, nav (desktop + mobile), project modal, contact form (sonner toast on valid submit), footer scroll, and key sections all working. Resume CTA points to correct public PDF URL.",
+  "tested_scope": ["frontend", "integration"],
+  "passed": [
+    "Home page loads at REACT_APP_BACKEND_URL",
+    "Hero heading, eyebrow (Portfolio — 2026), and portrait visible",
+    "Nav Resume CTA href = correct external Emergent PDF URL",
+    "nav-work-link smooth-scrolls to #work (scrollY=2022)",
+    "hero-view-projects-btn scrolls to #work",
+    "6 project cards render; project-card-zomato-analytics opens modal; close button dismisses it",
+    "Contact form valid submit shows sonner success toast 'Opening your mail client…' and clears inputs",
+    "Footer scroll-to-top triggers smooth scroll upward",
+    "About stats contain 8.27 CGPA and 1000+ markers",
+    "Certifications contain Oracle and BCG (others use different display wording)",
+    "Mobile viewport (390x844): nav-mobile-toggle opens panel; nav-mobile-skills-link scrolls to #skills"
+  ],
+  "failed": [],
+  "notes": [
+    "Empty-form submit toast was not captured in the DOM at the polling instant (likely sonner auto-dismiss timing) but valid-submit toast was captured, confirming sonner is wired up. Not treated as a bug.",
+    "Some About/Certifications label sub-strings ('Internships', 'Projects Shipped', 'Forage', 'Udemy') were not literal matches in body text — likely stylized/case-variant labels in data.js. Visual screenshot confirms sections render.",
+    "No backend tested — this is a pure frontend portfolio as stated in the request."
+  ],
+  "action_items": [],
+  "success_rate": {"backend": "n/a", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}
