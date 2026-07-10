@@ -1,0 +1,130 @@
+{
+  "project_name": "Yashvardhan Debas Personal Portfolio",
+  "theme": "Editorial Tech (Dark Charcoal)",
+  "colors": {
+    "background": {
+      "base": "#0A0A0A",
+      "surface": "#121212",
+      "surface_elevated": "#1A1A1A",
+      "glass": "rgba(10, 10, 10, 0.65)"
+    },
+    "text": {
+      "primary": "#F4F4F5",
+      "secondary": "#A1A1AA",
+      "tertiary": "#71717A",
+      "inverse": "#0A0A0A"
+    },
+    "accent": {
+      "primary": "#FF4D00",
+      "hover": "#FF6A2B",
+      "glow": "rgba(255, 77, 0, 0.15)"
+    },
+    "border": {
+      "subtle": "rgba(255, 255, 255, 0.08)",
+      "strong": "rgba(255, 255, 255, 0.15)"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Playfair Display', serif",
+      "body": "'Manrope', sans-serif",
+      "mono": "'JetBrains Mono', monospace"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl lg:text-[5rem] tracking-tight leading-[1.1]",
+      "h2": "text-4xl md:text-5xl tracking-tight leading-tight",
+      "h3": "text-2xl md:text-3xl tracking-tight",
+      "h4": "text-xl font-medium",
+      "body_lg": "text-lg md:text-xl leading-relaxed text-secondary",
+      "body": "text-base leading-relaxed text-secondary",
+      "small": "text-sm text-tertiary",
+      "eyebrow": "text-xs uppercase tracking-[0.2em] font-mono text-accent-primary"
+    },
+    "styling_rules": "Use Playfair Display for main section headings with strategic use of italics (e.g., 'Selected *Projects*'). Use JetBrains Mono for data points, tags, and technical metrics."
+  },
+  "spacing": {
+    "section": "py-24 md:py-32",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "gap_small": "gap-4",
+    "gap_medium": "gap-8",
+    "gap_large": "gap-12 md:gap-20"
+  },
+  "visual_enhancers": {
+    "borders": "1px solid rgba(255,255,255,0.08)",
+    "shadows": {
+      "subtle": "0 4px 20px rgba(0,0,0,0.5)",
+      "glow": "0 0 40px rgba(255,77,0,0.15)"
+    },
+    "radii": {
+      "card": "rounded-2xl",
+      "button": "rounded-full",
+      "tag": "rounded-full"
+    },
+    "textures": "Apply a subtle CSS/SVG grain/noise overlay globally across the background with opacity-5 to remove digital flatness."
+  },
+  "component_patterns": {
+    "navigation": {
+      "wrapper": "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+      "scrolled_state": "bg-background-glass backdrop-blur-xl border-b border-white/5 py-4",
+      "default_state": "bg-transparent py-6"
+    },
+    "buttons": {
+      "primary": "bg-accent-primary text-white hover:bg-accent-hover rounded-full px-6 py-3 font-medium transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,77,0,0.4)] hover:-translate-y-1 active:translate-y-0",
+      "secondary": "bg-transparent border border-white/10 text-primary hover:border-white/30 rounded-full px-6 py-3 font-medium transition-all duration-300 hover:bg-white/5",
+      "icon": "h-12 w-12 rounded-full border border-white/10 flex items-center justify-center hover:border-accent-primary hover:text-accent-primary transition-all duration-300"
+    },
+    "cards": {
+      "base": "bg-surface border border-white/5 rounded-2xl p-6 md:p-8 transition-all duration-500 hover:border-white/15 relative overflow-hidden group",
+      "hover_effect": "Add an absolute, transparent-to-glow radial gradient that follows the mouse (via Framer Motion or pure CSS) to create a premium Apple-like card reveal."
+    },
+    "tags": {
+      "base": "px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-mono text-secondary hover:text-primary transition-colors"
+    },
+    "hero_image": {
+      "treatment": "Editorial framed portrait. 3:4 aspect ratio. Rendered in monochrome/grayscale by default using CSS filters. On hover, smoothly transition to full color with a slight scale-up effect. Wrapper should have rounded-2xl, border-white/10, and a subtle inner shadow. Overlay a very faint grain texture."
+    }
+  },
+  "layouts": {
+    "hero": "Asymmetric split layout. Left (60%): Eyebrow, Massive heading (Playfair Display, staggered text animation), descriptive body text, two CTA buttons. Right (40%): The editorial profile portrait placed with a slight parallax offset.",
+    "about": "Bento grid style. Top row spanning full width for narrative. Bottom row split into 4 equal cards (col-span-1) for statistics (8.27 CGPA, 2 Internships, 10+ Projects, 1000+ Event Participants) featuring huge Mono numbers.",
+    "skills": "Categorized masonry or dense flex-wrap grid. Group by: Development (Python, Java, JS, HTML, CSS, React, Tailwind, Bootstrap, AWS, Git), Data/ML (SQL, Pandas, NumPy, Power BI, Matplotlib, Scikit-learn, TensorFlow, NLP), Design (Figma, UI Design, UX Research, Wireframing). Use small pill-shaped tags with Lucide icons.",
+    "experience": "Vertical timeline. Left side features a 1px vertical line with absolute positioned glowing dot indicators. Right side holds the content blocks (Infinite Computer Solutions, To The New). Dates in JetBrains Mono.",
+    "projects": "Asymmetric 3-column CSS grid. Large featured projects span 2 columns, standard projects span 1 column. Clicking a project card triggers a Shadcn Dialog (Modal) featuring an expanded view with the project image, extensive details, and tech stack tags.",
+    "contact": "Two column layout. Left: Large typography 'Let's Build Something' and direct contact info/socials. Right: Shadcn Form components (Input, Textarea, Button) encased in a glassmorphism card. Ensure frontend validation."
+  },
+  "motion": {
+    "library": "framer-motion",
+    "scrolling": "lenis (smooth scroll)",
+    "page_load": "Staggered fade-up (y: 20, opacity: 0). Duration: 0.8s, Ease: [0.16, 1, 0.3, 1].",
+    "scroll_reveal": "WhileInView fade-up with a viewport margin of '-100px' to trigger just as items enter.",
+    "hover_states": "Scale elements slightly (scale: 1.02) and lift (y: -4) with a spring transition (stiffness: 400, damping: 25).",
+    "parallax": "Use Framer Motion's useScroll and useTransform to apply subtle vertical shifts to images and background elements based on scroll position."
+  },
+  "assets": {
+    "face_image": "https://customer-assets.emergentagent.com/job_yv-creative-studio/artifacts/vld4rprx_Face%20image.jpeg",
+    "resume_pdf": "https://customer-assets.emergentagent.com/job_yv-creative-studio/artifacts/6uzy61z3_Yashvardhan.pdf"
+  },
+  "accessibility": {
+    "testing": "All interactive and key informational elements MUST include a 'data-testid' attribute (e.g., data-testid='nav-about-link', data-testid='project-modal-close').",
+    "contrast": "Ensure the molten orange accent passes contrast checks against the dark charcoal background. If text is placed on the accent color, use inverse (black) text.",
+    "motion": "Respect 'prefers-reduced-motion' for all Framer Motion animations."
+  },
+  "instructions_to_main_agent": [
+    "Initialize React (.js, not .tsx) app with Tailwind CSS.",
+    "Configure Tailwind config with the custom colors, fonts (Playfair Display, Manrope, JetBrains Mono), and visual specs provided.",
+    "Install and integrate framer-motion, lucide-react, @studio-freight/react-lenis (for smooth scrolling).",
+    "Install shadcn/ui primitives specifically for Dialog (Projects modal), Input/Textarea/Button (Contact form).",
+    "Strictly avoid Space Grotesk and purple/violet gradients.",
+    "Implement the custom 'molten orange' accent cleanly, prioritizing typography and layout structure over excessive decoration.",
+    "Apply data-testid to every button, link, form field, and interactive card."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic outputs. Avoid the 'AI slop' aesthetic. Make creative, distinctive frontends.",
+    "Do NOT use universal transition 'transition: all'. Explicitly state transition properties.",
+    "Do NOT center align the app container (.App { text-align: center; }). Keep natural left-aligned reading flow.",
+    "Use 2-3x more spacing than typical to maintain the premium Apple/Framer vibe.",
+    "Ensure glassmorphism headers have a defined background (e.g. bg-[#0a0a0a]/70), never completely transparent.",
+    "Use Lucide-React for all icons unless explicitly specified otherwise. No emoji icons.",
+    "Never use generic placeholder image URLs. Use the provided face.img and resume.pdf assets where necessary."
+  ]
+}
