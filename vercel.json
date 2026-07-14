@@ -6,20 +6,9 @@
       "installCommand": "npm install --legacy-peer-deps",
       "buildCommand": "npm run build",
       "outputDirectory": "build"
-    },
-    "backend": {
-      "root": "backend",
-      "entrypoint": "server:app"
     }
   },
   "rewrites": [
-    {
-      "source": "/api(/.*)?",
-      "destination": {
-        "type": "service",
-        "service": "backend"
-      }
-    },
     {
       "source": "/(.*)",
       "destination": {
