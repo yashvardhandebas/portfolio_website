@@ -39,7 +39,7 @@ export default function Navigation() {
           aria-label="Home"
         >
           <span className="font-display text-xl md:text-2xl italic tracking-tight">
-            Yash<span className="text-molten">·</span>D
+            Yashvardhan
           </span>
         </button>
 

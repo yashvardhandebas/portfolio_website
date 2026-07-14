@@ -104,7 +104,7 @@ export default function Projects() {
               }`}
             >
               <div className="relative z-[1]">
-                <CoverArt title={p.title} tag={p.tag} accent={p.accent} />
+                <CoverArt title={p.coverTitle || p.title} tag={p.tag} accent={p.accent} />
                 <div className="p-2 pt-5">
                   <div className="flex items-center justify-between gap-4">
                     <h3 className="font-display text-2xl md:text-[1.7rem] tracking-tight leading-tight">
@@ -149,7 +149,7 @@ export default function Projects() {
                 <DialogTitle className="sr-only">{active.title}</DialogTitle>
                 <DialogDescription className="sr-only">{active.summary}</DialogDescription>
                 <div className="relative">
-                  <CoverArt title={active.title} tag={active.tag} accent={active.accent} />
+                  <CoverArt title={active.coverTitle || active.title} tag={active.tag} accent={active.accent} />
                   <button
                     onClick={() => setActive(null)}
                     aria-label="Close"

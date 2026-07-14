@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10">
           <div>
             <p className="font-display italic text-5xl md:text-7xl tracking-tight leading-none">
-              Yash<span className="text-molten">·</span>D
+              Yashvardhan
             </p>
             <p className="mt-4 text-bone-400 max-w-sm">
               Designed, built and maintained by {PROFILE.name}. Built with React,
