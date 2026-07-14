@@ -56,7 +56,7 @@ export const EXPERIENCE = [
     company: "Infinite Computer Solutions",
     role: "Data Analytics & Software Development Intern",
     period: "Jun 2026 — Jul 2026",
-    location: "Remote",
+    location: "Hybrid",
     bullets: [
       "Conducted EDA on confidential UPPCL electricity meter data across 3+ dataset categories.",
       "Delivered 2 Power BI dashboards and client presentations, cutting manual reporting time by 30%.",
@@ -68,7 +68,7 @@ export const EXPERIENCE = [
     company: "To The New",
     role: "User Interface Designer Intern",
     period: "May 2025 — Jun 2025",
-    location: "Remote",
+    location: "Hybrid",
     bullets: [
       "Designed intuitive interfaces that elevated usability by 25% and boosted user engagement by 30%.",
       "Delivered 10+ wireframes and interactive prototypes in Figma, accelerating development cycles by 20%.",
